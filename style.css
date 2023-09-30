@@ -1,152 +1,159 @@
 *{
-    font-family: 'Sarabun', sans-serif !important;
-    margin:0;
-    padding:0;
-    
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
 }
+
 .container{
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    width: 100vw;
+    height: 100vh;
     align-items: center;
     padding: 0;
-    color: #D2F9EC;
-    width:100vw;
-    height:100vh;
-    background-color:#4f317d;
-    
-}
-.main{
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
-    /* max-width:500px;
-    max-height:320px;     */
-    
     margin: 0;
-    gap:0;
-    overflow: hidden;
-    border-radius: 24px !important;
-    box-shadow: 5px 8px #2c1849;
-}
 
+}
 .header{
     display: flex;
-    width: 100vw;
-    height: 80px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    top:0;
 }
 
-.main div:nth-child(1){
+.header ul{
     display: flex;
-    flex-direction: column;
-    justify-content: center !important;
-    align-items: flex-end;
-    width:99.99vw;
-    height: 100vh;
-    background: url('https://i.pinimg.com/originals/97/e0/bd/97e0bdf761c1dabdb5979778aa89a54f.jpg');
-    
-    /* background-color:#587bbd; */
-    padding: 0 8% 0 0;
-    gap: 0;
+    gap:34px;
+    height: 80px;
+    align-items: center;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size:16px;
+    font-weight: 600;
 }
-ul{
+
+.header ul a {
+    text-decoration: none;
+}
+.header ul li a{
     display:flex;
     justify-content: center;
     align-items: center;
-    list-style-type: none;
-    gap:16px;
+    width: 180px;
+    padding: 0 4%;
+}
+.header ul li a:hover{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #fa08ce;
+    font-weight: 600;
+    color: white !important;
+    cursor: pointer;
 }
 
-.main div:nth-child(2){
-    width:60vw;
-    height: 100vh;
-    background-color:#6287c6;
+
+.main{
     display: flex;
     flex-direction: column;
-    justify-content: center !important;
-    gap: 0;
-    padding: 4% 2%;
+    width: 100%;
+    height: auto;
+   align-items: center;
+    background-color: #1675D9;
+    padding: 0;
 }
 
-
-
-h1{
-   font-size:1.1em;
-    font-weight: 500;
-}
-
-#title-work{
-    font-size:1.1em;
-    font-weight: 800;
-}
-
-hr{
-    width: 200px;
-    margin: 4px 0;
-}
-a{
+.article{
     display: flex;
-    justify-content: left;
+    width: 100%;
+    flex-direction: column;
+   
+    height: 100vh;
+    justify-content: center;
     align-items: center;
-    text-decoration:none;
-    width: auto;
-    height:24px;
-    border-radius:8px;
-    border:none;
-    color:#D2F9EC;
-    font-size:0.9em;
+	background-image:linear-gradient(to bottom, transparent 0%, #1675D9 80%),url(https://cloudfront-us-east-1.images.arcpublishing.com/infobae/KYDMRTMUQ5HT3G6RJTYKSW5LUA.jpg);
+    background-position: center;
+    background-size: contain;
+
+}
+.article div{
+    color:white;
+    max-width: 500px;
+    z-index: 2000;
+    gap:28px;
+    display: flex;
+    flex-direction: column;
+}
+.main img{
+    width: 100%;
+    height: 450px;
+    background-position: container;
+}
+
+ button {
+    width: 200px;
+    padding: 8px 16px;
     font-weight: 600;
-    gap:8px;
-}
-a:hover{
-    text-decoration: underline;
-    animation-duration: 0.8s;
+    text-transform: uppercase;
+    background-color: #24F0B6;
+    border-radius: 14px;
+    border: none;
+    box-shadow: 3px 3px 18px #0235262f;
+    cursor: pointer;
 }
 
-
-@media (max-width:576px){
-    .container{
-        
-        background-color:#7F58BD;
-    }
-    .main{
-        width: 100%; 
-        height: auto;
-        max-height: max-content;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap:4px;
-        background-color:#7F58BD;
-        box-shadow: none;
-    }
-    .main img{    
-      max-width: 60px;
-    }
-
-    .main div:nth-child(1){
-        height: 200px;
-    }
-    .main div:nth-child(2){
-        background-color:#7F58BD;
-        height: auto;
-        padding: 2%;
-    }
-    h1{
-        font-size:1.2em;
-        font-weight: 700;
-    }
-    #title-work{
-        font-size:1.0em;
-        font-weight: 600;
-    }
-    a{
-        font-size:1.2em;
-        font-weight: 500;
-        margin: 2% 0;
-    }
-    hr{
-        margin: 4px 0;
-    }
+#atv a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #fa08ce;
+    font-weight: 600;
+    color: rgb(255, 255, 255) !important;
 }
+
+h5{
+    text-transform: uppercase;
+}
+
+/**/
+
+.solucoes{
+    background-image:linear-gradient(to bottom, transparent 0%, #1675D9 50%),url(https://learningentrepreneurship.com/wp-content/uploads/2016/08/Internet-WWW.jpg);
+    background-position: center;
+    background-size: contain;
+}
+.solucoes ul{
+    display: flex;
+    flex-direction: row;
+    gap:14px;
+}
+.solucoes img{
+    max-width: 54px;
+    height: 54px;
+}
+
+.sobre {
+    background-image:linear-gradient(to bottom, transparent 0%, #1675D9 50%),url(https://www.ambir.com/wp-content/uploads/2020/02/687_image-edit-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contato{
+    background-image:linear-gradient(to right, transparent 0%, #1675D9 50%),url(https://storage.googleapis.com/answerconnectbloguk/1/2021/02/A-Comprehensive-Guide-to-Telephone-Answering-Services-How-to-choose-the-benefits-more-rESOURCE.jpg);
+    background-position: left;
+    background-size: contain;
+}
+
+.servicos {
+    background-image:linear-gradient(to bottom, transparent 0%, #1675D9 50%),url(https://netsonic.fi/en/wp-content/uploads/2021/06/getty_692429144_370294.jpg);
+    background-position: left;
+    background-size: contain;
+}
+    
