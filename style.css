@@ -27,7 +27,7 @@
 
 .header ul{
     display: flex;
-    gap:34px;
+    gap:16px;
     height: 80px;
     align-items: center;
     list-style-type: none;
